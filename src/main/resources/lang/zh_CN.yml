@@ -1,0 +1,47 @@
+#插件中文语言文件
+Error:
+  ExecutedByConsole: "&c控制台不能使用这个命令！"
+  NoPermissionToUseCommand: "&c你没有权限执行此命令！"
+  NoPermissionToUseSubCommand: "&c你没有权限执行这个子命令！"
+  Usage: "&c参数错误！ /<command> <subcommand...>"
+  CoolDown: "&c连续使用的间隔时间为&e%s%&c秒！"
+
+Command:
+  SetLobby:
+    SetupSuccessful: "&a成功将%location%设置为主城点！"
+    AirUnderFoot: "&c无法以空气方块作为主城点！"
+  Reload: "&a成功重载所有配置文件！"
+  Lang:
+    ChangeSuccessful: "&a成功将全局语言切换为%lang%！"
+    ChangeFailed: "&c无法识别的语言%lang%！"
+  Spawn:
+    NotSet: "&c主城点未设置！"
+  Fly:
+    Enabled: "&a已开启飞行！"
+    Disabled: "&c已关闭飞行！"
+  Vanish:
+    Message:
+      Enabled: "&a已开启隐身！"
+      Disabled: "&c已关闭隐身！"
+    ActionBar:
+      Enabled: "&a你已进入隐身模式，其他玩家将无法看到你！"
+      Disabled: "&c你已退出隐身模式，现在所有玩家都可以看到你了！"
+  ClearChat: "&a成功请除所有玩家的聊天！"
+
+Listener:
+  Block:
+    Place: "&c你不能放置方块！"
+    Break: "&c你不能破坏方块！"
+  Inventory:
+    Drop: "&c你不能丢弃物品！"
+    PickUp: "&c你不能捡起物品！"
+  PVP: "&c你不能在这里PVP！"
+  Prompt: "&7你还没有设置主城点，使用/setlobby来设置！"
+  Player:
+    Join:
+      Title: "&b&l欢迎玩家&e&l%player%"
+      SubTitle: "&6&l来到服务器！"
+      Message: "&8[&2+&8] &7%player%"
+    Quit:
+      Message: "&8[&2-&8] &7%player%"
+  Anti-SwearWords: "&c消息中带有违禁词，已被系统撤回！"

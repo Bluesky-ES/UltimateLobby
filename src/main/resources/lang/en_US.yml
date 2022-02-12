@@ -1,0 +1,47 @@
+#Plugin English Language File
+Error:
+  ExecutedByConsole: "&cThe console cannot use this command!"
+  NoPermissionToUseCommand: "&cYou do not have permission to execute this command!"
+  NoPermissionToUseSubCommand: "&cYou do not have permission to execute this subcommand!"
+  Usage: "&cParameter error! /<command> <subcommand...>"
+  CoolDown: "&cThe interval time for continuous use is &e%s%&c seconds!"
+
+Command:
+  SetLobby:
+    SetupSuccessful: "&aSuccessfully set %location% as the lobby point!"
+    AirUnderFoot: "&cCan't use air as lobby point!"
+  Reload: "&aAll configuration files reloaded successfully!"
+  Lang:
+    ChangeSuccessful: "&aSuccessfully switched the global language to %lang%!"
+    ChangeFailed: "&cUnrecognized language %lang%!"
+  Spawn:
+    NotSet: "&cThe lobby point is not set!"
+  Fly:
+    Enabled: "&aFlight is on!"
+    Disabled: "&cFlight is off!"
+  Vanish:
+    Message:
+      Enabled: "&aVanish is on!"
+      Disabled: "&cVanish is off!"
+    ActionBar:
+      Enabled: "&aYou have entered vanishing mode, other players will not be able to see you!"
+      Disabled: "&cYou are out of vanishing mode and now all players can see you!"
+  ClearChat: "&aSuccessfully remove all players from the chat! "
+
+Listener:
+  Block:
+    Place: "&cYou can't place blocks!"
+    Break: "&cYou can't break blocks!"
+  Inventory:
+    Drop: "&cYou can't drop items!"
+    PickUp: "&cYou can't pick up items!"
+  PVP: "&cYou can't PVP here!"
+  Prompt: "&7You haven't set the lobby point yet, type /setlobby to set it!"
+  Player:
+    Join:
+      Title: "&b&lWelcome player &e&l%player%"
+      SubTitle: "&6&lto the server!"
+      Message: "&8[&2+&8] &7%player%"
+    Quit:
+      Message: "&8[&2-&8] &7%player%"
+  Anti-SwearWords: "&cThe message contains prohibited words and has been withdrawn by the system!"

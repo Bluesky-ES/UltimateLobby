@@ -1,0 +1,21 @@
+First_Item:
+  Slot: 0
+  Material: COMPASS
+  Amount: 1
+  Data: 0
+  Name: "§dUltimate Lobby Plugin Info"
+  Lore:
+    - "§7View plugin information"
+  Commands:
+    - "ultimatelobby info"
+
+Second_Item:
+  Slot: 2
+  Material: SIGN
+  Amount: 1
+  Data: 0
+  Name: "§aUltimate Lobby Plugin Help"
+  Lore:
+    - "§7View plugin help"
+  Commands:
+    - "ultimatelobby help"

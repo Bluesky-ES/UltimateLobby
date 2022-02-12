@@ -1,0 +1,22 @@
+main: me.bluesky.plugin.ultimatelobby.Main
+name: UltimateLobby
+version: 1.0.4
+author: Bluesky_ES
+
+commands:
+  ultimatelobby:
+    description: 插件主命令(The main command of the plugin)
+    aliases: [ulobby, ultimatel, ul]
+  spawn:
+    description: 返回主城点(Go back to the lobby point)
+  setlobby:
+    description: 设置主城点(Set lobby point)
+  fly:
+    description: 开启/关闭飞行(Turn on/off flight)
+  vanish:
+    description: 开启/关闭隐身(Turn on/off vanish)
+    aliases: [v]
+  clearchat:
+    description: 清除所有玩家的聊天(Clear chat for all players)
+  broadcast:
+    description: 给所有玩家发送一条自定义公告(Send a custom announcement to all players)

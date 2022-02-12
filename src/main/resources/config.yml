@@ -1,0 +1,199 @@
+#
+# Ultimate Lobby
+# Author: Bluesky_ES
+# Plugin version: 1.0
+#
+
+#插件全局语言,默认: zh_CN | Plugin Global Version, Default: zh_CN
+Language: zh_CN  # 支持 Support: zh_CN, en_US
+
+#插件全局消息前缀 | Plugin Global Message Prefix
+Prefix: "&8[&dUltimateLobby&8] "
+
+#更新检测 | Update Checker
+Update_Checker: true
+
+Functions:
+  #聊天格式，支持PlaceholderAPI，默认变量： %player% - 玩家 %message% - 消息内容
+  #Chat format, placeholder support, default placeholders: %player% - player %world% - world %message% - message content
+  Chat_Format:
+    Switch: true
+    Format: "&f%player% &6>> &f %message%"
+
+  #玩家上线传送至主城点，游戏内使用"/setlobby"进行设置。
+  #Teleports the player to the lobby point when the player joins, Type "/setlobby" in the game to set it.
+  Login_Teleport_to_Lobby_Point:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #隐藏死亡界面 | Hide Death Screen
+  Hide_Death_Screen:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #隐藏死亡消息 | Hide Death Message
+  Hide_Death_Message:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #关闭死亡，当此项开启时，优先级将高于"隐藏死亡界面"和"隐藏死亡消息"。
+  #Disable death, when this option is enabled, the priority will be higher than "Hide Death Screen" and "Hide Death Message".
+  Disable_Death:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #天气锁定 | Weather Lock
+  Weather_Lock:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #时间锁定 | Time Lock
+  Time_Lock:
+    Switch: true
+    Type: DAY  #支持 Support: DAY, NIGHT
+    Worlds:
+      - world
+      - lobby
+
+  #阻止玩家破坏方块，OP除外。 | Prevent players from breaking blocks, except OP.
+  Prevent_Block_Place:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止玩家放置方块，OP除外。 | Prevent players from placing blocks, except OP.
+  Prevent_Block_Break:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止玩家丢弃物品，OP除外。 | Prevent players from dropping items, except OP.
+  Prevent_Item_Drop:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止玩家捡起物品，OP除外。 | Prevent players from picking up items, except OP.
+  Prevent_Item_Pick_Up:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止玩家移动物品，OP除外。 | Prevent players from moving items, except OP.
+  Prevent_Item_Move:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #关闭怪物生成 | Disable Monster Spawn
+  Disable_Monster_Spawn:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #关闭动物生成 | Disable Animal Spawn
+  Disable_Animal_Spawn:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止玩家PVP，OP除外。 | Prevent player PVP, except OP.
+  Prevent_PVP:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止来源于方块的伤害 | Prevent Block Source Damage
+  Prevent_Block_Source_Damage:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止所有来源的伤害 | Prevent Damage
+  Prevent_Damage:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #虚空拉回 | Void Return
+  Void_Return:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #阻止掉饱食度 | Prevent Food Level Change
+  Prevent_Food_Level_Change:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #玩家加入/退出消息 | Player Join/Quit Message
+  Player:
+    Join:
+      Title: true
+      Title_Times:
+        FadeIn: 0
+        Stay: 40
+        FadeOut: 0
+      Message: true
+      Sound:
+        Switch: true
+        Type: LEVEL_UP
+    Quit:
+      Message: true
+
+  #自动飞行，当玩家加入游戏并拥有ultimatelobby.fly权限时自动设置为飞行模式。
+  #Auto flight, when the player joins the game and has the ultimatelobby.fly permission, it is automatically set to flight mode.
+  Auto_Flight:
+    Switch: true
+    Worlds:
+      - world
+      - lobby
+
+  #二段跳 | Double Jump
+  Double_Jump:
+    Switch: true
+    CoolDown: 5 #秒 Seconds
+    Power:
+      Launch: 1.0
+      Launch_Y: 1.0
+    Worlds:
+      - world
+      - lobby
+
+  #发射台 | Launch Pad
+  Launch_Pad:
+    Switch: true
+    Block: GOLD_PLATE
+    Power:
+      Launch: 1.0
+      Launch_Y: 1.0
+    Worlds:
+      - world
+      - lobby
+
+  #大厅物品 | Lobby Items
+  Lobby_Items:
+    Switch: true

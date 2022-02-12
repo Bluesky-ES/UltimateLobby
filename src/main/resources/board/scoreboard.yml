@@ -1,0 +1,13 @@
+Scoreboard:
+  Switch: true
+  Refresh_Interval: 1 #秒 Seconds
+  Board:
+    Title: "&6&lYour Server"
+    Info: #Never have duplicate scoring items!
+      - " "
+      - "&fWelcome: &b%player_name%"
+      - "&fYour Ping: &a%player_ping%"
+      - "&fPlaceholderAPI"
+      - "&fSupported"
+      - "  "
+      - "&emc.yourserver.net"

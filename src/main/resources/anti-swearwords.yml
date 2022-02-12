@@ -1,0 +1,7 @@
+Anti-SwearWords:
+  Switch: true
+  Disable_Words:
+    - shit
+    - fuck
+    - 艹
+    - 傻逼

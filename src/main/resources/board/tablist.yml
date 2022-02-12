@@ -1,0 +1,6 @@
+TabList:
+  Switch: true
+  Refresh_Interval: 1 #秒 Seconds
+  Tab:
+    Header: "&6&lWelcome to Your Server!"
+    Footer: "mc.yourserver.net"

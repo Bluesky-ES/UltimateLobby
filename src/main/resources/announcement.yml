@@ -1,0 +1,7 @@
+Announcement:
+  Switch: true
+  Interval: 60 #秒 Seconds
+  Messages:
+    - "这是第一个默认公告，请前往announcement.yml修改。 | This is the first default announcement, please go to announcement.yml to modify."
+    - "这是第二个默认公告，请前往announcement.yml修改。 | This is the second default announcement, please go to announcement.yml to modify."
+    - "这是第三个默认公告，请前往announcement.yml修改。 | This is the third default announcement, please go to announcement.yml to modify."
