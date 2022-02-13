@@ -18,8 +18,11 @@ public class ChatFormat implements Listener {
     public void onChat(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
         if (!plugin.getConfig().getBoolean("Functions.Chat_Format.Switch")) return;
-        List<String> swearwords = ConfigUtils.getAntiSwearWords().getStringList("Anti-SwearWords.Disable_Words");
-        if (swearwords.contains(e.getMessage())) return;
+        if (ConfigUtils.getAntiSwearWords().getBoolean("Anti-SwearWords.Switch")) {
+            List<String> swearwords = ConfigUtils.getAntiSwearWords().getStringList("Anti-SwearWords.Disable_Words");
+            for (String str : swearwords)
+                if (e.getMessage().contains(str)) return;
+        }
         e.setCancelled(true);
         SendMessageUtils.SMTAPrs(
                 ColorUtils.tMC(plugin.getConfig().getString("Functions.Chat_Format.Format")

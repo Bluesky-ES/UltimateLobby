@@ -14,10 +14,13 @@ public class AntiSwearWords implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
-
+        if (!ConfigUtils.getAntiSwearWords().getBoolean("Anti-SwearWords.Switch")) return;
         List<String> swearwords = ConfigUtils.getAntiSwearWords().getStringList("Anti-SwearWords.Disable_Words");
-        if (!swearwords.contains(e.getMessage())) return;
-        e.setCancelled(true);
-        SendMessageUtils.SMTPr(player, LangUtils.getConfigLangMessage("Listener.Anti-SwearWords"));
+        for (String str : swearwords) {
+            if (e.getMessage().contains(str)) {
+                e.setCancelled(true);
+                SendMessageUtils.SMTPr(player, LangUtils.getConfigLangMessage("Listener.Anti-SwearWords"));
+            }
+        }
     }
 }

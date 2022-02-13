@@ -149,6 +149,15 @@ Functions:
       - world
       - lobby
 
+  #阻止玩家打开容器 | Prevents Players from Opening Containers
+  Prevent_Inventory_Open:
+    Switch: true
+    Except:
+      - CHEST
+    Worlds:
+      - world
+      - lobby
+
   #玩家加入/退出消息 | Player Join/Quit Message
   Player:
     Join:

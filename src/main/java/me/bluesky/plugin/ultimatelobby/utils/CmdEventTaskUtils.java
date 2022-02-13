@@ -46,6 +46,7 @@ public class CmdEventTaskUtils {
         pm.registerEvents(new LobbyItems(), plugin);
         pm.registerEvents(new Update(), plugin);
         pm.registerEvents(new AntiSwearWords(), plugin);
+        pm.registerEvents(new OpenInventory(), plugin);
     }
 
     public static void registerTasks(Plugin plugin) {
