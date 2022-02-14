@@ -1,6 +1,7 @@
 package me.bluesky.plugin.ultimatelobby.utils;
 
 import com.avaje.ebean.validation.NotNull;
+import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
@@ -19,11 +20,19 @@ public class SendMessageUtils {
         player.sendMessage(message);
     }
 
+    public static void SendJsonMessageToPlayer(Player player, BaseComponent... message) {
+        player.spigot().sendMessage(message);
+    }
+
     public static void SendMessageToPlayer(CommandSender sender, String... message) {
         sender.sendMessage(message);
     }
     public static void SMTPr(Player player, String... message) {
         player.sendMessage(message);
+    }
+
+    public static void SJMTPr(Player player, BaseComponent... message) {
+        player.spigot().sendMessage(message);
     }
 
     public static void SMTPr(CommandSender sender, String... message) {

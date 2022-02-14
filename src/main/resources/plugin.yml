@@ -1,6 +1,6 @@
 main: me.bluesky.plugin.ultimatelobby.Main
 name: UltimateLobby
-version: 1.0.5
+version: 1.0.6
 author: Bluesky_ES
 
 commands:

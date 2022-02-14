@@ -37,11 +37,4 @@ Listener:
     PickUp: "&cYou can't pick up items!"
   PVP: "&cYou can't PVP here!"
   Prompt: "&7You haven't set the lobby point yet, type /setlobby to set it!"
-  Player:
-    Join:
-      Title: "&b&lWelcome player &e&l%player%"
-      SubTitle: "&6&lto the server!"
-      Message: "&8[&2+&8] &7%player%"
-    Quit:
-      Message: "&8[&2-&8] &7%player%"
   Anti-SwearWords: "&cThe message contains prohibited words and has been withdrawn by the system!"

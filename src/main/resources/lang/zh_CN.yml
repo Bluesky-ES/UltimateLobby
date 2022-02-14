@@ -37,11 +37,4 @@ Listener:
     PickUp: "&c你不能捡起物品！"
   PVP: "&c你不能在这里PVP！"
   Prompt: "&7你还没有设置主城点，使用/setlobby来设置！"
-  Player:
-    Join:
-      Title: "&b&l欢迎玩家&e&l%player%"
-      SubTitle: "&6&l来到服务器！"
-      Message: "&8[&2+&8] &7%player%"
-    Quit:
-      Message: "&8[&2-&8] &7%player%"
   Anti-SwearWords: "&c消息中带有违禁词，已被系统撤回！"

@@ -18,6 +18,7 @@ public class MainCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Main plugin = Main.getInstance();
         description = plugin.getDescription();
+
         if (args.length == 0) {
             if (LangUtils.getConfigLangType().equalsIgnoreCase("Chinese")) {
                 SendMessageUtils.SMTPr(sender,

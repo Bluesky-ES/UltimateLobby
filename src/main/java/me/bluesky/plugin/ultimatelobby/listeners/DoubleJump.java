@@ -4,6 +4,7 @@ import me.bluesky.plugin.ultimatelobby.Main;
 import me.bluesky.plugin.ultimatelobby.utils.LangUtils;
 import me.bluesky.plugin.ultimatelobby.utils.SendMessageUtils;
 import org.bukkit.GameMode;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -31,6 +32,8 @@ public class DoubleJump implements Listener {
         } else {
             player.setVelocity(player.getLocation().getDirection().multiply(plugin.getConfig().getDouble("Functions.Double_Jump.Power.Launch"))
                     .setY(plugin.getConfig().getDouble("Functions.Double_Jump.Power.Launch_Y")));
+            Sound sound = Sound.valueOf(plugin.getConfig().getString("Functions.Double_Jump.Sound"));
+            player.playSound(player.getLocation(), sound, 100, 1);
             cooldown.put(player, System.currentTimeMillis());
         }
     }

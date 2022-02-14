@@ -161,17 +161,32 @@ Functions:
   #玩家加入/退出消息 | Player Join/Quit Message
   Player:
     Join:
-      Title: true
-      Title_Times:
-        FadeIn: 0
-        Stay: 40
-        FadeOut: 0
-      Message: true
+      Title:
+        Switch: true
+        Times:
+          FadeIn: 0
+          Stay: 40
+          FadeOut: 0
+        MainTitle: "&b&lWelcome &e&l%player%"
+        SubTitle: "&6&lto my server!"
+      Message:
+        Switch: true
+        Content: "&8[&2+&8] &7%player%"
+      Motd:
+        Switch: true
+        Content:
+          - "&8&m----------------------------------------"
+          - "    &e&lWelcome &d&lto &6&lMy &b&lServer !"
+          - " "
+          - "   &6You can edit this message in config.yml!"
+          - "&8&m----------------------------------------"
       Sound:
         Switch: true
         Type: LEVEL_UP
     Quit:
-      Message: true
+      Message:
+        Switch: true
+        Content: "&8[&2-&8] &7%player%"
 
   #自动飞行，当玩家加入游戏并拥有ultimatelobby.fly权限时自动设置为飞行模式。
   #Auto flight, when the player joins the game and has the ultimatelobby.fly permission, it is automatically set to flight mode.
@@ -188,6 +203,7 @@ Functions:
     Power:
       Launch: 1.0
       Launch_Y: 1.0
+    Sound: PISTON_EXTEND
     Worlds:
       - world
       - lobby
@@ -199,6 +215,7 @@ Functions:
     Power:
       Launch: 1.0
       Launch_Y: 1.0
+    Sound: PISTON_EXTEND
     Worlds:
       - world
       - lobby
